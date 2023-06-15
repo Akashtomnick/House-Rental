@@ -6,7 +6,7 @@ function Dashboard (){
         return(Name[int]);
     }
     return(<div>
-        <h1>hai {Namechanged}.what are you doing?</h1>
+        <h1>hai {Namechanged}.what are name</h1>
     </div>)
 }
 export default Dashboard;

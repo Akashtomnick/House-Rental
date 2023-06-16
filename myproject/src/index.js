@@ -5,14 +5,12 @@ import App from './App';
 import Login from './componant.js';
 import mainlogin from './login.jsx';
 import Dashboard from './NameChanged';
-import Mainfunction from './function.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
  <App/>
  <Login/>
- <Mainfunction/>
  <Dashboard/>  
 
 

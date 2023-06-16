@@ -7,6 +7,7 @@ class Login  extends React.Component{
     <button>SUBMIT</button>
     <button>CANCLE</button>
     <br/>
+    <h1>game</h1>
     <button >CREATE ACCOUNT</button>
     </center>
     </div>

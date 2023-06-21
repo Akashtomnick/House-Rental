@@ -5,6 +5,7 @@ import App from './App';
 import Login from './componant.js';
 import mainlogin from './login.jsx';
 import Dashboard from './NameChanged';
+import Mainfunction from './newfunction';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,9 +13,8 @@ root.render(
  <App/>
  <Login/>
  <Dashboard/>  
-
-
- </React.StrictMode>
+<Mainfunction/>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

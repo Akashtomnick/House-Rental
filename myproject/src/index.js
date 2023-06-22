@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Login from './componant.js';
+import Login from './Componant';
 import Dashboard from './NameChanged';
 
 

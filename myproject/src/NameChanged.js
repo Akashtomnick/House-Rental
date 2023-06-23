@@ -1,12 +1,14 @@
-import React from "react";
-function Dashboard (){
+import React, { useState } from "react";
+const Dashboard =()=>{
+    const [name,setname]=useState("name")
     function Namechanged(){
         const Name=["akash","pradeep","suriya","muthu"];
-        const int=math.floor(math.random()*4);
-        return(Name[int]);
+        const int=Math.floor(Math.random()*4);
+        setname(Name[int]);
     }
     return(<div>
-        <h1>hai {Namechanged}.what are name</h1>
+        <h1>hai {name}.what are name</h1>
+        <button onClick={Namechanged}>changename</button>
     </div>)
 }
 export default Dashboard;

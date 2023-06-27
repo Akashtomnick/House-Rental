@@ -23,24 +23,25 @@ import React, { useState } from "react";
     {
         id:1,
         checked : true,
-        item:'WAKING' },{
+        item:"WAKING"
+    },
+    {
         id:2,
         checked:false,
-        item:'BREAKEFAST'
+        item:"BREAKEFAST"
 
     },
     {
         id:3,
         checked:false,
-        item:'LUNCH'
+        item:"LUNCH"
     }
 ]);
+console.log({item:item});
 return<main>
     <ul>
 
-<button>delete</button>
-     console.log({item.items});
-    </ul>
+</ul>
 </main>
 }
 export default Content;

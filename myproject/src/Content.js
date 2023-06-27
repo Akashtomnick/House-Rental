@@ -1,34 +1,32 @@
 import React, { useState } from "react";
- const Content=()=>
-{const [item,setitem]=useState(
+ const Content1=()=>
+{const [item,setitem]=useState([
     {
         id:1,
         checked : true,
-        items:"WAKING"
-       
-    },{
+        item:"WAKING" },{
         id:2,
         checked:false,
-        items:"BREAKEFAST"
+        item:"BREAKEFAST"
 
     },
     {
         id:3,
         checked:false,
-        items:"LUNCH"
+        item:"LUNCH"
     }
-)
+]);
 return<main>
     <ul>
-     {item.map(
+     {item.map((item)=>(
         <li>
             <input type="checkbox"
             checked={item.checked}/>
-            <label>{item.items}
+            <label>{item.item}
             </label>
-<button>delete
-    </button>        </li>
-     )}
+<button>delete</button></li>
+     ))}
+     console.log({item.items});
     </ul>
 </main>
 }

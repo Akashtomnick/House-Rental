@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import Login from './Componant';
 import Dashboard from './NameChanged';
-import { Content } from './Content';
+import Content from './Componant';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <Content/>
+ <Content />
 </React.StrictMode>
 );
 

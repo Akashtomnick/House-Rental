@@ -1,10 +1,16 @@
 import React from "react";
 function mainlogin (){
     return (
-        <div>
-           <h1><lable>USER NAME:</lable><input type="text" /></h1> 
-           <h2> <label>PASSWORD</label></h2> <input type="password"/>
-        </div>
+        <div><center>
+             <label>USER:</label><input type='text' placeholder='username'/><br/>
+             <lable>PASSWORD:</lable><input type='password' placeholder='password'/><br/>
+             <button onClick={()=>alert("alla detail are submit")}>SUBMIT</button>
+             <button onClick={()=>alert("all detail are canceled")}>CANCLE</button>
+             <br/>
+        
+             <button>CREATE ACCOUNT</button>
+             </center>
+           </div>
     )
 }
 export default mainlogin;

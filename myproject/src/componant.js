@@ -37,11 +37,20 @@ import React, { useState } from "react";
         item:"LUNCH"
     }
 ]);
-console.log({item:item});
-return<main>
+// const product=item.map(Newfn);
+// function Newfn(item){
+//     return {id:item.id,item:item.item ,checked:item.checked
+//     }
+// }
+// console.log({product});
+// return<main>
     <ul>
-
+        {item.map((item)=>(
+            <li>
+                <label>{item.item}</label>
+                <button>delete</button>
+            </li>
+        ))};
 </ul>
-</main>
 }
 export default Content;

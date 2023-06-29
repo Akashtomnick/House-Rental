@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./Content.css";
+import {FaTrashAlt} from 'react-icons/fa';
  const Content=()=>
 {const [item,setitems]=useState([
     {
@@ -26,14 +28,18 @@ import React, { useState } from "react";
  // }
  // console.log({product});
  // return<main>
- return(   <ul>
+ return(  <main className="body"> 
+    <h1 >DO TO APP</h1>
         {item.map((item)=>(
-            <li>
-                <input type="checkbox" checked={item.checked}/>
+            <li key={item.id}>
+                <input className="checkbox" type="checkbox" checked={item.checked}/>
                 <label>{item.item}</label>
-                <button>delete</button>
+                <FaTrashAlt
+                role="button"
+            tabIndex="0"
+                />
             </li>
         ))};
- </ul>
-)}
+ </main>
+)};
 export default Content;

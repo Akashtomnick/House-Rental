@@ -28,11 +28,18 @@ import {FaTrashAlt} from 'react-icons/fa';
  // }
  // console.log({product});
  // return<main>
+ const Checkboxchange=(id)=>{
+    console.log({id:item.checked});
+ }
  return(  <main className="body"> 
     <h1 >DO TO APP</h1>
         {item.map((item)=>(
             <li key={item.id}>
-                <input className="checkbox" type="checkbox" checked={item.checked}/>
+                <input 
+                className="checkbox" 
+                type="checkbox" 
+                checked={item.checked} onChange={Checkboxchange(item.id)}
+                />
                 <label>{item.item}</label>
                 <FaTrashAlt
                 role="button"

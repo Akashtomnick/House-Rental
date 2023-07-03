@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Content.css";
 import {FaTrashAlt} from 'react-icons/fa';
-import {Routes,Route} from 'react-router-dom'
-import mainlogin from "./login";
+
  const Content=()=>
 {const [item,setitems]=useState([
     {
@@ -38,10 +37,7 @@ import mainlogin from "./login";
         {item.map((item)=>(
             <li key={item.id}>
                 <mainlogin/>
-                <Routes>
-                    <Route path="/mainlogin" element={mainlogin()}></Route>
-
-                </Routes>
+               
                 <input 
                 className="checkbox" 
                 type="checkbox" 

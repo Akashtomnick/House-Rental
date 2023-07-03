@@ -39,7 +39,7 @@ import mainlogin from "./login";
             <li key={item.id}>
                 <mainlogin/>
                 <Routes>
-                    <Route path="/mainlogin" element={mainlogin}></Route>
+                    <Route path="/mainlogin" element={mainlogin()}></Route>
 
                 </Routes>
                 <input 

@@ -29,8 +29,9 @@ import {FaTrashAlt} from 'react-icons/fa';
  // }
  // console.log({product});
  // return<main>
+ // input type la oru action work aga namba on change kupudanum
  const Checkboxchange=(id)=>{
-    console.log({id:item.checked});
+    item.map((item)=>id===id?checked:!item.checked)
  }
  return(  <main className="body"> 
     <h1 >DO TO APP</h1>
@@ -41,7 +42,8 @@ import {FaTrashAlt} from 'react-icons/fa';
                 <input 
                 className="checkbox" 
                 type="checkbox" 
-                checked={item.checked} onChange={Checkboxchange(item.id)}
+                checked={item.checked} 
+                onChange={()=>Checkboxchange(item.id)}
                 />
                 <label>{item.item}</label>
                 <FaTrashAlt

@@ -1,5 +1,5 @@
 import React from "react";
-function Login (){
+function Ok(){
     return (
         <div><center>
              <label>USER:</label><input type='text' placeholder='username'/><br/>
@@ -10,6 +10,6 @@ function Login (){
                      <button>CREATE ACCOUNT</button>
              </center>
            </div>
-    )
+    );
 }
-export default Login;
+export default Ok;

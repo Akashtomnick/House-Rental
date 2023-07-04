@@ -13,7 +13,7 @@ import Loginb from './Router';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <Loginb />
+    <Content/>
 </React.StrictMode>
 );
 

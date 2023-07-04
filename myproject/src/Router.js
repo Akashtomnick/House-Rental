@@ -1,14 +1,15 @@
 import React from "react";
 import {Router,Route} from"react-dom-router"
-import {Login} from"./Login.js"
-export function Loginb()
+import {Ok} from"./Login.js"
+ function Loginb()
 
 {
     return(
         <div>
             <Router>
-                <Route path="/01" element={<Login />}></Route>
+                <Route path="/01" element={<Ok />}></Route>
             </Router>
         </div>
     )
 }
+export default Loginb;

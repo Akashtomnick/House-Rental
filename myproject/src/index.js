@@ -5,6 +5,7 @@ import App from './App';
 import Login from './Componant';
 import Dashboard from './NameChanged';
 import Content from './Componant';
+import Loginb from './Router';
 
 
 
@@ -12,7 +13,7 @@ import Content from './Componant';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <Content />
+ <Loginb />
 </React.StrictMode>
 );
 
